@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Barbershop</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header class="main-header">
+		<div class="container clearfix">
+			<nav class="main-navigation">
+				<ul>
+					<li class="active"><a href="">Главная</a></li>
+					<li><a href="">Информация</a></li>
+					<li><a href="">Новости</a></li>
+					<li><a href="">Прайс-лист</a></li>
+					<li><a href="">Магазин</a></li>
+					<li><a href="">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="user-block">
+				<a href="" class="login">Вход</a>
+			</div>
+		</div>
+	</header>
+	<div class="container">
+		<div class="logo">
+			<a href="">
+				<img src="img/logo.png" alt="">
+			</a>
+		</div>
+		<section class="features-row clearfix">
+			<div class="features-item">
+				<div class="features-title">Быстро</div>
+				<p>Мы деалем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки.</p>
+			</div>
+			<div class="features-item">
+				<div class="features-title">Круто</div>
+				<p>Забудьте, как вы стриглись раньше.<br> Мы сделаем из вас звезду футбола или кино!<br> Во всяком случае внешне.</p>
+			</div>
+			<div class="features-item">
+				<div class="features-title">Дорого</div>
+				<p>Наши мастера - профессионалы своего дела и<br> не могут стоить дешево. К тому же, разве цена<br> не дает определенный статус?</p>
+			</div>
+		</section>
+		<div class="index-content clearfix">
+			<section class="content-column-left">
+				<h2 class="content-column-title">Новости</h2>
+				<ul>
+					<li>
+						Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки<br>
+						<time datetime="30.01.2016">30 января</time>
+					</li>
+					<li>
+						В нашей компании пополнени, Борис "Бритва" Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды<br>
+						<time datetime="30.01.2016">30 января</time>
+					</li>
+				</ul>
+				<a href="" class="btn">Все новости</a>
+			</section>
+			<section class="content-column-right">
+				<h2 class="content-column-title">Фотогалерея</h2>
+				<div class="gallery">
+					<figure class="gallery-content">
+						<img src="img/gallery-img.jpg" width="286" height="164" alt="">
+					</figure>
+					<button class="btn gallery-prev">Назад</button><button class="btn gallery-next">Вперед</button>
+				</div>
+			</section>
+		</div>
+		<div class="index-content clearfix">
+			<section class="content-column-left">
+				<div class="main-contacts">
+					<h2 class="content-column-title">Контактная информация</h2>
+					<p>
+						Barbershop "Borodinski" <br>
+						Адрес: г. Москва, ул. Собаки Павлова, д. 13<br>
+						Телефон: +7(495) 666-02-666<br>
+					</p>
+					<p>
+						Время работы:<br>
+						Пн - Пт: с 10:00 до 22:00<br>
+						Сб - Вс: с 10:00 до 19:00<br>
+					</p>
+					<div class="buttons">
+							<a href="" class="btn first-btn">Как проехать</a><a href="" class="btn second-btn">Обратная связь</a>
+					</div>
+				</div>
+			</section>
+			<section class="content-column-right">
+				<div class="appointment-form">
+					<h2 class="content-column-title">Записаться</h2>
+					<p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+					<form action="/echo" method="post">
+						<input type="text" name="date" value="" placeholder="Дата"><input type="text" name="time" value="" placeholder="Время"><input type="text" name="text" value="" placeholder="Ваше имя"><input type="text" name="tel" value="" placeholder="Телефон">
+						<button type="submit" class="btn">Отправить</button>
+					</form>
+				</div>
+			</section>
+		</div>
+	</div>
+	<footer>
+		<div class="container clearfix">
+			<section class="footer-contacts">
+						Barbershop "Borodinski"<br>
+						Адрес: г. Москва, ул. Собаки Павлова, д. 13<br>	
+						Телефон: +7(495) 666-02-666<br>	
+			</section>
+			<section class="footer-social">
+				Давайте дружить!
+				<a href="" class="social-btn social-btn-vk"></a><a href="" class="social-btn social-btn-fb"></a><a href="" class="social-btn social-btn-inst"></a>
+			</section>
+			<section class="footer-copyright">
+				<p>Дизайн сайта:</p>
+				<a href="">htmlacademy.ru</a>
+			</section>
+		</div>
+	</footer>
+</body>
+</html>
