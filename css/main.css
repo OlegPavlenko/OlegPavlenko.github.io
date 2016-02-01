@@ -65,6 +65,7 @@ a {
 }
 
 .main-navigation li:hover {
+	cursor: pointer;
 	background: #242424;
 }
 
@@ -85,6 +86,7 @@ a {
 }
 
 .user-block:hover {
+	cursor: pointer;
 	background-color: #242424;
 }
 
