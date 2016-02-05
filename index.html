@@ -90,7 +90,9 @@
 			var input = this;
 			p.classList.remove('hide');
 			input.classList.add('hide');
-			p.innerHTML = input.value;
+			if (input.value != undefined) {
+				p.innerHTML = input.value;
+			} 
 		};
 
 		function hideInput(event) {
@@ -99,7 +101,9 @@
 				var input = this;
 				p.classList.remove('hide');
 				input.classList.add('hide');
-				p.innerHTML = input.value;
+				if (input.value != undefined) {
+					p.innerHTML = input.value;
+				} 
 			} else {
 				return false;
 			}
