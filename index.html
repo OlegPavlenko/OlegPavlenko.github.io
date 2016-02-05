@@ -2,120 +2,155 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Barbershop</title>
+	<title>ToDo</title>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<header class="main-header">
-		<div class="container clearfix">
-			<nav class="main-navigation">
-				<ul>
-					<li class="active"><a href="">Главная</a></li>
-					<li><a href="">Информация</a></li>
-					<li><a href="">Новости</a></li>
-					<li><a href="">Прайс-лист</a></li>
-					<li><a href="">Магазин</a></li>
-					<li><a href="">Контакты</a></li>
-				</ul>
-			</nav>
-			<div class="user-block">
-				<a href="" class="login">Вход</a>
-			</div>
-		</div>
-	</header>
-	<div class="container">
-		<div class="logo">
-			<a href="">
-				<img src="img/Logo.png" alt="">
-			</a>
-		</div>
-		<section class="features-row clearfix">
-			<div class="features-item">
-				<div class="features-title">Быстро</div>
-				<p>Мы деалем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки.</p>
-			</div>
-			<div class="features-item">
-				<div class="features-title">Круто</div>
-				<p>Забудьте, как вы стриглись раньше.<br> Мы сделаем из вас звезду футбола или кино!<br> Во всяком случае внешне.</p>
-			</div>
-			<div class="features-item">
-				<div class="features-title">Дорого</div>
-				<p>Наши мастера - профессионалы своего дела и<br> не могут стоить дешево. К тому же, разве цена<br> не дает определенный статус?</p>
-			</div>
-		</section>
-		<div class="index-content clearfix">
-			<section class="content-column-left">
-				<h2 class="content-column-title">Новости</h2>
-				<ul>
-					<li>
-						Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки<br>
-						<time datetime="30.01.2016">30 января</time>
+	<!-- <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div> -->
+	<div class="main-wrapper">
+		<div class="todo-container">
+			<ul class="nav-items clearfix">
+				<li><a href="#" class="nav-item">Work</a></li>
+				<li><a href="#" class="nav-item">Family</a></li>
+				<li><a href="#" class="nav-item">Personal</a></li>
+				<li><a href="#" class="nav-item">Vacation</a></li>
+				<li><a href=""><img src="img/plus.png" alt=""></a></li>
+			</ul>
+			<ul class="filter clearfix">
+				<li>Filter:</li>
+				<li><a href="#" class="filter-item" id="all">All</a></li>
+				<li><a href="#" class="filter-item" id="active">Active</a></li>
+				<li><a href="#" class="filter-item" id="finished">Finished</a></li>
+			</ul>
+			<ul class="todo-list">
+				<li class="add-item">
+					<input class="add" type="text" placeholder="What shit needs to get done">
+				</li>
+				<div>	
+					<li class="todo-list-item active">
+						<p>Daily design #3</p>
+						<input type="text" class="hide">
 					</li>
-					<li>
-						В нашей компании пополнени, Борис "Бритва" Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды<br>
-						<time datetime="30.01.2016">30 января</time>
+					<li class="todo-list-item active">
+						<p>Reply to emails</p>
+						<input type="text" class="hide">
 					</li>
-				</ul>
-				<a href="" class="btn">Все новости</a>
-			</section>
-			<section class="content-column-right">
-				<h2 class="content-column-title">Фотогалерея</h2>
-				<div class="gallery">
-					<figure class="gallery-content">
-						<img src="img/gallery-img.jpg" width="286" height="164" alt="">
-					</figure>
-					<button class="btn gallery-prev">Назад</button><button class="btn gallery-next">Вперед</button>
 				</div>
-			</section>
-		</div>
-		<div class="index-content clearfix">
-			<section class="content-column-left">
-				<div class="main-contacts">
-					<h2 class="content-column-title">Контактная информация</h2>
-					<p>
-						Barbershop "Borodinski" <br>
-						Адрес: г. Москва, ул. Собаки Павлова, д. 13<br>
-						Телефон: +7(495) 666-02-666<br>
-					</p>
-					<p>
-						Время работы:<br>
-						Пн - Пт: с 10:00 до 22:00<br>
-						Сб - Вс: с 10:00 до 19:00<br>
-					</p>
-					<div class="buttons">
-							<a href="" class="btn first-btn">Как проехать</a><a href="" class="btn second-btn">Обратная связь</a>
-					</div>
-				</div>
-			</section>
-			<section class="content-column-right">
-				<div class="appointment-form">
-					<h2 class="content-column-title">Записаться</h2>
-					<p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-					<form action="/echo" method="post">
-						<input type="text" name="date" value="" placeholder="Дата"><input type="text" name="time" value="" placeholder="Время"><input type="text" name="text" value="" placeholder="Ваше имя"><input type="text" name="tel" value="" placeholder="Телефон">
-						<button type="submit" class="btn">Отправить</button>
-					</form>
-				</div>
-			</section>
+				<li class="todo-list-item">
+					<p>Another todo</p>
+				</li>
+				<li class="todo-list-item">
+					<p>Another todo</p>
+				</li>
+				<li class="todo-list-item">
+					<p>Another todo</p>
+				</li>
+			</ul>
 		</div>
 	</div>
-	<footer>
-		<div class="container clearfix">
-			<section class="footer-contacts">
-						Barbershop "Borodinski"<br>
-						Адрес: г. Москва, ул. Собаки Павлова, д. 13<br>	
-						Телефон: +7(495) 666-02-666<br>	
-			</section>
-			<section class="footer-social">
-				Давайте дружить!
-				<a href="" class="social-btn social-btn-vk"></a><a href="" class="social-btn social-btn-fb"></a><a href="" class="social-btn social-btn-inst"></a>
-			</section>
-			<section class="footer-copyright">
-				<p>Дизайн сайта:</p>
-				<a href="">htmlacademy.ru</a>
-			</section>
-		</div>
-	</footer>
+
+
+	<script>
+	var navItems = document.getElementsByClassName('nav-item');
+	for (var i = 0; i < navItems.length; i++) {
+		var navItem = navItems[i];
+		navItem.addEventListener('click', function() {
+			for (var j = 0; j < navItems.length; j++) {
+				navItems[j].className = "nav-item";
+			}
+			this.className = 'nav-item active';
+		});
+	}
+	var todoListItems = document.getElementsByClassName('todo-list-item');
+	var itemsActive = [];
+	for (var i = 0; i < todoListItems.length; i++) {
+		if (todoListItems[i].classList.contains('active')) {
+		  itemsActive.push(todoListItems[i]);
+		}
+
+	}
+	for (var i = 0; i < itemsActive.length; i++) {
+		itemsActive[i].firstElementChild.addEventListener('click', showInput);
+		itemsActive[i].lastElementChild.addEventListener('blur', hideInput);
+		itemsActive[i].lastElementChild.addEventListener('keypress', hideInput);
+
+		function showInput() {
+			var p = this;
+			var input = this.parentElement.lastElementChild;
+			p.classList.add('hide');
+			input.classList.remove('hide');
+			input.value = p.innerHTML;
+			input.setSelectionRange(0, input.value.length);
+		};
+
+		function hideInput() {
+			var p = this.parentElement.firstElementChild;
+			var input = this;
+			p.classList.remove('hide');
+			input.classList.add('hide');
+			p.innerHTML = input.value;
+		};
+
+		function hideInput(event) {
+			if (event.which == 13 ) {
+				var p = this.parentElement.firstElementChild;
+				var input = this;
+				p.classList.remove('hide');
+				input.classList.add('hide');
+				p.innerHTML = input.value;
+			} else {
+				return false;
+			}
+		};  
+	}	
+	var filterAll = document.getElementById('all');
+	var filterActive = document.getElementById('active');
+	var filterFinished = document.getElementById('finished');
+
+	var filters = document.getElementsByClassName('filter-item');
+
+	function filterWhite() {
+		for (var i = 0; i < filters.length; i++) {
+			filters[i].classList.remove('active');
+		}
+	};
+
+
+	filterAll.addEventListener('click', function() {
+		filterWhite();
+		this.classList.add('active');
+		for (var i = 0; i < todoListItems.length; i++) {
+			todoListItems[i].classList.remove('hide');
+		}
+	});
+
+	filterActive.addEventListener('click', function() {
+		filterWhite();
+		this.classList.add('active');
+		for (var i = 0; i < todoListItems.length; i++) {
+			if (todoListItems[i].classList.contains('active') == false) {
+				todoListItems[i].classList.add('hide');
+			} else {
+				todoListItems[i].classList.remove('hide');
+			}
+		}
+	});
+
+	filterFinished.addEventListener('click', function() {
+		filterWhite();
+		this.classList.add('active');
+		for (var i = 0; i < todoListItems.length; i++) {
+			if (todoListItems[i].classList.contains('active')) {
+				todoListItems[i].classList.add('hide');
+			} else {
+				todoListItems[i].classList.remove('hide');
+			}
+		}
+	});
+
+	
+	</script>
 </body>
 </html>

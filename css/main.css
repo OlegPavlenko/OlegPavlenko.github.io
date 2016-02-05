@@ -1,14 +1,13 @@
 body {
-	max-width: 1980px;
-	min-width: 800px;
-	font-family: 'PT Sans Narrow';
-	font-weight: bold;
-	line-height: 24px;
-	text-transform: uppercase;
-	background-color: #000;
-	background-image: url('../img/bg-overlay.png'), url('../img/background.png'); 
-	background-size: 100%;
+	font-family: 'Raleway', sans-serif;
+	background-image: url('../img/background-image-blured.jpg');
 	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+}
+
+.hide {
+	display: none;
 }
 
 .clearfix:before,
@@ -21,355 +20,164 @@ body {
 	clear: both;
 }
 
-.main-header, 
-.container {
-	margin-left: auto;
-	margin-right: auto;
-} 
-
-.main-header {
-	width: 1200px;
-	color: #fff;
-	background-color: #000;
-}
-
-a {
-	font-size: 16px;
-	text-decoration: none;
-	line-height: 68px;
-	color: #fff;
-}
-
-
-
-.container {
+.main-wrapper {
+	margin: 100px auto;
 	width: 960px;
 }
 
-.main-navigation {
-	float: left;
-	margin-left: 30px;
+.todo-container {
+	width: 900px;
+	margin: 0 auto;
+	border-radius: 17px;
+	background: #fff;
+	box-shadow: 25px 25px 20px rgba(0, 0, 0, .3);
+
 }
 
-.main-navigation ul {
+.nav-items {
+	height: 100px;
 	margin-top: 0;
 	margin-bottom: 0;
+	background-image: url('../img/background-image.jpg');
+	background-size: cover;
+	background-position: center;
 	list-style: none;
-	padding: 0;
+	border-radius: 15px 15px 0 0;
 }
 
-.main-navigation li {
+.nav-items li {
 	float: left;
-	padding-left: 22px;
-	padding-right: 22px;
+	margin-top: 40px;
+	margin-right: 30px;
 }
 
-.main-navigation li:hover {
-	cursor: pointer;
-	background: #242424;
-}
-
-.main-navigation a {
-	padding-top: 19px;
-	padding-bottom: 19px;
-}
-
-.main-navigation li.active a {
-	border-bottom: 4px solid #fff;
-}
-
-.user-block {
-	width: 65px;
+.nav-items li:last-child {
 	float: right;
-	padding-left: 21px;
-	padding-right: 21px;
+	margin-right: 40px;
 }
 
-.user-block:hover {
-	cursor: pointer;
-	background-color: #242424;
+
+.nav-item {
+	font-size: 20px;
+	font-weight: 600;
+	text-decoration: none;
+ 	color: #F3C24C;
 }
 
-.login {
-	padding-left: 32px;
-	background-image: url('../img/login.png');
-	background-repeat: no-repeat;
-	background-position: 0% 50%;
+.nav-item:first-child {
+	margin-left: 50px;
 }
 
-.user-block:hover .login {
-	background-image: url('../img/login-hover.png');
-	background-repeat: no-repeat;
-	background-position: 0% 50%;
-}
-
-.logo {
-	margin-top: 57px;
-	margin-left: 300px;
-}
-
-.features-row {
-	margin-bottom: 80px;
-}
-
-.features-item {
-	margin-left: 10px;
-	margin-right: 10px;
-	float: left;
-	width: 300px;
-	font-size: 14px;
-	text-align: center;
-	line-height: 24px;
+.nav-item:hover,
+.nav-item.active {
 	color: #fff;
-	background-image: url('../img/features-icon.png');
-	background-repeat: no-repeat;
-	background-position: 50% 45px;
 }
 
-.features-title {
-	font-size: 30px;
-	margin-bottom: 81px;
-}
-
-
-
-.index-content {
-	font-size: 14px;
-	line-height: 24px;
-	margin-bottom: 34px;
-	margin-left: 10px;
-	margin-right: 10px;
-	padding-top: 50px;
-	height: 380px;
-	background: url('../img/index-content-bg.jpg');
-}
-
-.index-content p,
-.index-content li {
-	margin-bottom: 30px;
-}
-
-.content-column-left {
-	width: 390px;
-	float: left;
-	padding-left: 80px;
-}
-
-.content-column-right {
-	float: right;
-	width: 380px;
-	padding-left: 89px;
-}
-
-.content-column-title {
-	margin: 0;
-	margin-bottom: 30px;
-	font-size: 30px;
-	line-height: 24px;
-}
-
-.content-column-left ul {
-	padding-left: 0;
+.filter {
+	margin-top: 0;
+	margin-bottom: 0;
+	background-color: #F2C04D;
 	list-style: none;
 }
 
-.content-column-left li,
-.content-column-left p {
-	width: 300px;
+.filter li {
+	float: left;
+	font-size: 15px;
+	line-height: 50px;
+	color: #BD9234;
 }
 
+.filter-item {
+	color: #BD9234;
+	text-decoration: none;
+	padding: 0 20px;
+}
 
+.filter-item:hover,
+.filter-item.active {
+	color: #fff;
+	font-weight: 600;
+	padding: 0 19.5px;
+}
 
+.todo-list {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+	list-style: none;
+}
 
-time {
-	font-family: 'Georgia';
+.add-item .add {
+	padding-left: 105px;	
+	width: 795px;
+	font-size: 35px;
 	font-style: italic;
-	text-transform: none;
-	color: rgba(0, 0, 0, .5);
-}
-
-.btn {
-	display: inline-block;
-	color: #fff;
-	width: 140px;
-	font-weight: bold;
-	text-transform: uppercase;
-	text-align: center;
-	line-height: 43px;
-	background-color: #000; 
+	font-weight: 300;
+	line-height: 115px;
+	color: #C8CDD3;
+	background-color: #F2F3F7;
+	background-image: url('../img/arrows.png');
+	background-repeat: no-repeat;
+	background-position: 30px center;  
 	border: none;
+	outline: none;
 }
 
-.buttons {
-	margin-top: 45px;
+.add-item input::-webkit-input-placeholder {
+	color: #C8CDD3;
 }
 
-.btn:first-child {
-	margin-right: 20px;
+.todo-list-item.active {
+	position: relative;
+	height: 91px;
 }
 
-
-.btn:hover {
-	background: #663D15;
-}
-
-.gallery {
-	width: 300px;
-}
-
-.gallery-content {
+.todo-list-item p {
 	margin: 0;
-	margin-top: 38px;
-	margin-bottom: 37px;
+	padding-left: 110px;
+	font-size: 30px;
+	line-height: 85px;
+	color: #E8EBF4;
+	text-decoration: line-through;
+	background-image: url('../img/check.png');
+	background-repeat: no-repeat;
+	background-position: 30px center;
+	border-bottom: 2px solid #EEEEF6;
 }
 
-.gallery-content img {
-	width: 286px;
-	border: 7px solid #fff;
+.todo-list-item:last-child p {
+	border-bottom: none;
 }
 
-.gallery .btn {
+
+.todo-list-item.active p,
+.todo-list-item.active input {
+	position: absolute;
+	left: -20px;
 	padding: 0;
+	padding-left: 130px;
+	width: 810px;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 90px;
+	color: #9498A3;
+	text-decoration: none;
+	background-color: #fff;
+	border: none;
+	border-bottom: 2px solid #EEEEF6;
+	background-image: url('../img/check-active.png');
+	background-repeat: no-repeat;
+	background-position: 50px center;
+	box-shadow: 10px 10px 5px rgba(0, 0, 0, .1);
 	outline: none;
 }
 
-.gallery .gallery-prev {
-	margin-right: 20px;
+.todo-list-item.active:first-child p,
+.todo-list-item.active:first-child input {
+	border-radius: 3px 3px 0 0; 
 }
 
-.appointment-form {
-	width: 300px;
-}
-
-input {
-	display: inline-block;
-	margin-bottom: 19px;
-	padding-left: 15px;
-	width: 121px;
-	height: 40px;
-	border: 2px solid #000;
-	font-family: 'PT Sans Narrow';
-	font-size: 14px;
-	font-weight: bold;
-	text-transform: uppercase;
-	color: #000;
-	outline: none;
-}
-
-input:focus {
-	border-color: #663D15;
-}
-
-input::-webkit-input-placeholder {
-	color: #000;
-}
-
-input:nth-child(2n-1) {
-	margin-right: 20px;
-}
-
-.appointment-form .btn {
-	width: 300px;
-	margin-top: 10px;
-	outline: none;
-}
-
-footer {
-	margin-top: 65px;
-	padding-top: 60px;
-	padding-bottom: 60px;
-	color: #fff;
-	background-color: #222222;
-}
-
-.footer-contacts {
-	float: left;
-	width: 300px;
-	margin-right: 80px;
-	padding-left: 10px;
-	padding-right: 10px;
-}
-
-.footer-social {
-	float: left;
-	width: 140px;
-	padding-left: 10px;
-	padding-right: 10px;
-	text-align: center;
-}
-
-.footer-copyright {
-	float: right;
-	width: 140px;
-	padding-right: 10px;
-	text-align: center;
-}
-
-.footer-copyright p {
-	margin: 0;
-}
-
-.footer-copyright a {
-	margin-top: 10px;
-	display: block;
-	width: 140px;
-	line-height: 43px;
-	color: #fff;
-	background-color: #000;	
-}
-
-.footer-copyright a:hover {
-	color: #000;
-	background-color: #fff;
-}
-
-.social-btn {
-	margin-top: 10px;
-	display: inline-block;
-	background: #000;
-	height: 43px;
-	width: 43px;
-}
-
-.social-btn:first-child {
-	margin-right: 6px;
-}
-
-.social-btn:last-child {
-	width: 42px;
-	margin-left: 6px;
-}
-
-.social-btn-vk {
-	background-image: url('../img/vk.png');
-	background-repeat: no-repeat;
-	background-position: 50%;
-}
-
-.social-btn-fb {
-	background-image: url('../img/fb.png');
-	background-repeat: no-repeat;
-	background-position: 50%;
-}
-
-.social-btn-inst {
-	background-image: url('../img/');
-}
-
-.social-btn-vk:hover {
-	background-color: #fff;
-	background-image: url('../img/vk-hover.png');
-	background-repeat: no-repeat;
-	background-position: 50%;
-}
-
-.social-btn-fb:hover {
-	background-color: #fff;
-	background-image: url('../img/fb-hover.png');
-	background-repeat: no-repeat;
-	background-position: 50%;
-}
-
-.social-btn-inst:hover {
-	background-color: #fff;
+.todo-list-item.active:last-child p,
+.todo-list-item.active:last-child input {
+	border-radius: 0 0 3px 3px; 
 }
